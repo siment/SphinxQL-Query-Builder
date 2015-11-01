@@ -1,3 +1,33 @@
+**Important: Original Readme starts in section *Query Builder for SphinxQL* below**
+
+## How to install
+
+Use composer to install. *Query Builder for SphinxQL* uses PSR-0 style class loading. This fork requires the module
+"firegento/psr0autoloader" to enable PSR-0 autoloading in `lib` directory. To configure namespace for
+*Query Builder for SphinxQL* you have to add the following to the `global` node of your `local.xml`
+
+```xml
+<global>
+    <!-- Using firegento/psr0autoloader to use Foolz namespaced classes in /lib -->
+    <psr0_namespaces>
+        <Foolz />
+    </psr0_namespaces>
+```
+
+## Changelog
+
+This changelog is only for addendums added to this fork. The original changelog is in `CHANGELOG.md`.
+
+#### 1.0.1.1
+
+* Changed `composer.json` so module is compatible with installation via "magento-hackathon/magento-composer-installer"
+* Added `modman` file so "magento-composer-installer" will deploy files into `lib` folder in Magento root.
+* Added "firegento/psr0autoloader" to requirements
+
+**END readme addendum. Original readme below**
+
+* * *
+
 Query Builder for SphinxQL
 ==========================
 

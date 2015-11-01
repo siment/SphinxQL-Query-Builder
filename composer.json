@@ -1,18 +1,15 @@
 {
-    "name": "foolz/sphinxql-query-builder",
-    "replace": {"foolz/sphinxql": "self.version"},
-    "type": "library",
-    "description": "A PHP query builder for SphinxQL. Uses MySQLi to connect to the Sphinx server.",
+    "name": "siment/sphinxql-query-builder",
+    "type": "magento-module",
+    "description": "A PHP query builder for SphinxQL. Uses MySQLi to connect to the Sphinx server. Based on foolz/sphinxql-query-builder. Modified to be deployed via Composer into a Magento project",
     "keywords": ["database", "sphinxql", "sphinx", "search", "SQL", "query builder"],
-    "homepage": "http://www.foolz.us",
+    "homepage": "https://github.com/siment/SphinxQL-Query-Builder",
     "license": "Apache-2.0",
-    "authors": [{"name": "foolz", "email": "support@foolz.us"}],
-    "support": {
-        "email": "support@foolz.us",
-        "irc": "irc://irc.irchighway.net/fooldriver"
-    },
+    "authors": [{"name": "foolz", "email": "support@foolz.us"}, {"name": "Simen Thorsrud", "email": "simen.thorsrud@gmail.com"}],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "firegento/psr0autoloader": "^0.1.0",
+        "magento-hackathon/magento-composer-installer": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "4.4.*"
